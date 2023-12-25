@@ -1,4 +1,4 @@
-import { NextSeo } from 'next-seo';
+import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
 
 import { Container } from '@/components/Container'
@@ -31,24 +31,24 @@ export function ArticleLayout({
   }
   return (
     <>
-    <NextSeo
-      title={meta.title}
-      description={meta.description}
-      canonical={`https://brian.dev${router.pathname}`}
-      openGraph={{
-        url: `https://brian.dev${router.pathname}`,
-        images: [
-          {
-            url: `https://og.brian.dev/api/og?title=${meta.title}&desc=${meta.description}`,
-            width: 1200,
-            height: 600,
-            alt: 'Og Image Alt',
-            type: 'image/jpeg',
-          }
-        ],
-        siteName: 'brian.dev',
-      }}
-    />
+      <NextSeo
+        title={meta.title}
+        description={meta.description}
+        canonical={`https://itstaby.dev${router.pathname}`}
+        openGraph={{
+          url: `https://itstaby.dev${router.pathname}`,
+          images: [
+            {
+              url: `https://og.itstaby.dev/api/og?title=${meta.title}&desc=${meta.description}`,
+              width: 1200,
+              height: 600,
+              alt: 'Og Image Alt',
+              type: 'image/jpeg',
+            },
+          ],
+          siteName: 'itstaby.dev',
+        }}
+      />
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
           <div className="mx-auto max-w-2xl">

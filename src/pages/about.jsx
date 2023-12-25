@@ -8,21 +8,20 @@ import {
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
-  MastodonIcon
+  MastodonIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/brian-head.jpg'
+import portraitImage from '@/images/hero.jpeg'
 import siteMeta from '@/data/siteMeta'
-import { NextSeo } from 'next-seo';
-
+import { NextSeo } from 'next-seo'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="flex text-sm font-medium transition group text-zinc-800 hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
       >
-        <Icon className="flex-none w-6 h-6 transition fill-zinc-500 group-hover:fill-teal-500" />
+        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -44,21 +43,21 @@ export default function About() {
   return (
     <>
       <NextSeo
-        title="About - Brian Ketelsen"
+        title="About - Tayyab Anwar"
         description={siteMeta.description}
-        canonical="https://brian.dev/about"
+        canonical="https://itstaby.dev/about"
         openGraph={{
-          url: 'https://brian.dev/about',
+          url: 'https://itstaby.dev/about',
           images: [
             {
-              url: `https://og.brian.dev/api/og?title=About&desc=${siteMeta.description}`,
+              url: `https://og.itstaby.dev/api/og?title=About&desc=${siteMeta.description}`,
               width: 1200,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
-            }
+            },
           ],
-          siteName: 'brian.dev',
+          siteName: 'itstaby.dev',
         }}
       />
       <Container className="mt-16 sm:mt-32">
@@ -69,66 +68,69 @@ export default function About() {
                 src={portraitImage}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="object-cover aspect-square rotate-3 rounded-2xl bg-zinc-100 dark:bg-zinc-800"
+                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Brian Ketelsen. I live in Florida, where I help people
-              across the world learn the Cloud.
+              I’m Tayyab.
+              <br /> I live in Vancouver and build software.
             </h1>
-            <div className="mt-6 text-lg prose space-y-7 dark:prose-invert text-zinc-600 dark:text-zinc-400">
+            <div className="prose mt-6 space-y-7 text-lg text-zinc-600 dark:prose-invert dark:text-zinc-400">
               <p>
-                Howdy! Thanks for stopping by. I’m Brian and I’ve been doing technology
-                things since <a href="https://en.wikipedia.org/wiki/Acoustic_coupler">acoustic
-                  modem couplers</a> were a thing. I love Open Source and exploring different programming languages.
-                Some highlights about me and my activities:
+                I picked up my first C++ book in 2007, and it was the most
+                exciting thing in the world.
               </p>
               <p>
-                <b>Army Veteran:</b> Bradley Fighting Vehicle Gunner, Infantry, 1st Armored Division
+                I’ve been building software since I was a kid, and I’ve focused
+                my career on building a versatile and comprehensive engineering
+                toolkit.
               </p>
               <p>
-                <b>Father of <s>four</s> five</b> with <s>19</s> 21 years difference between oldest and youngest child
+                I have also been mentoring engineers for the last half decade,
+                and building people up has been an essential part of my jounrey.
               </p>
               <p>
-                <b>Co-founded GopherCon</b> <a href="https://gophercon.com">the largest conference for Go developers</a>.
+                I aspire to leave every piece of code I touch better than I
+                found it, and I have been able to create some incredible
+                experiences in the projects I’ve done.
               </p>
               <p>
-                <b>Co-authored</b> <a href="https://www.amazon.com/Go-Action-William-Kennedy/dp/1617291781">Go In Action</a> for Manning Publishing.
-              </p>
-              <p>
-                <b>Co-wrote</b> Skynet and SkyDNS with Erik St. Martin, which was eventually morphed into the DNS service discovery that powers Kubernetes.
-              </p>
-              <p>
-                <b>Contributed</b> to the largest projects that power the Internet. Go, Kubernetes, Etcd, and so many more.
-              </p>
-              <p>
-                I love Open Source, learning in public, and sharing what I learn with others.
+                I have also worked on diverse set of problems, from SaaS apps
+                and data pipelines to Machine Learning models and 3D modeling.
+                The diversity of my skill is at the vore of my engineering
+                journey
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href={siteMeta.author.twitter} icon={TwitterIcon}>
-                Follow on Twitter
-              </SocialLink>
-              <SocialLink href={siteMeta.author.mastodon} icon={MastodonIcon} className="mt-4">
-                Follow on Mastodon
-              </SocialLink>
-              <SocialLink href={siteMeta.author.instagram} icon={InstagramIcon} className="mt-4">
+              <SocialLink
+                href={siteMeta.author.instagram}
+                icon={InstagramIcon}
+                className="mt-4"
+              >
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href={siteMeta.author.github} icon={GitHubIcon} className="mt-4">
+              <SocialLink
+                href={siteMeta.author.github}
+                icon={GitHubIcon}
+                className="mt-4"
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href={siteMeta.author.linkedin} icon={LinkedInIcon} className="mt-4">
+              <SocialLink
+                href={siteMeta.author.linkedin}
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
                 href={`mailto:${siteMeta.author.email}`}
                 icon={MailIcon}
-                className="pt-8 mt-8 border-t border-zinc-100 dark:border-zinc-700/40"
+                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
                 {siteMeta.author.email}
               </SocialLink>
