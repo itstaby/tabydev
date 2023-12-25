@@ -44,19 +44,19 @@ export default function ArticlesIndex({ articles }) {
       <NextSeo
         title="Articles - Tayyab Anwar"
         description={siteMeta.description}
-        canonical="https://itstaby.dev/articles"
+        canonical="https://taby.dev/articles"
         openGraph={{
-          url: 'https://itstaby.dev/articles',
+          url: 'https://taby.dev/articles',
           images: [
             {
-              url: `https://og.itstaby.dev/api/og?title=Articles&desc=${headline}`,
+              url: `https://og.taby.dev/api/og?title=Articles&desc=${headline}`,
               width: 1200,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
           ],
-          siteName: 'itstaby.dev',
+          siteName: 'taby.dev',
         }}
       />
       <SimpleLayout title={headline} intro={intro}>

@@ -172,19 +172,19 @@ export default function Home({ articles }) {
       <NextSeo
         title="Tayyab Anwar"
         description={siteMeta.description}
-        canonical="https://itstaby.dev/"
+        canonical="https://taby.dev/"
         openGraph={{
-          url: 'https://itstaby.dev',
+          url: 'https://taby.dev',
           images: [
             {
-              url: `https://og.itstaby.dev/api/og?title=${siteMeta.title}&desc=${siteMeta.description}`,
+              url: `https://og.taby.dev/api/og?title=${siteMeta.title}&desc=${siteMeta.description}`,
               width: 1200,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
           ],
-          siteName: 'itstaby.dev',
+          siteName: 'taby.dev',
         }}
       />
       <Container className="mt-9">

@@ -7,7 +7,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 function ToolsSection({ children, ...props }) {
   return (
     <Section {...props}>
-      <ul role="list" className="space-y-16">
+      <ul role="list" className="space-y-5">
         {children}
       </ul>
     </Section>
@@ -31,42 +31,56 @@ export default function Uses() {
       <NextSeo
         title="Uses - Tayyab Anwar"
         description={siteMeta.description}
-        canonical="https://itstaby.dev/uses"
+        canonical="https://taby.dev/uses"
         openGraph={{
-          url: 'https://itstaby.dev/uses',
+          url: 'https://taby.dev/uses',
           images: [
             {
-              url: `https://og.itstaby.dev/api/og?title=Uses&desc=Things I use every day to get my work done.`,
+              url: `https://og.taby.dev/api/og?title=Uses&desc=Things I use every day to get my work done.`,
               width: 1200,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
           ],
-          siteName: 'itstaby.dev',
+          siteName: 'taby.dev',
         }}
       />
       <SimpleLayout
-        title="Software I use, gadgets I love, and other things I recommend."
-        intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+        title="Software I use, gadgets I love."
+        intro="Here's what I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. "
       >
-        <div className="space-y-20">
+        <div className="space-y-2">
           <ToolsSection title="Workstation">
-            <Tool title="13” MacBook Pro, M1 Max, 64GB RAM (2021)">
-              I don&apos;t know how Apple makes such a tiny laptop so fast and
-              responsive, no matter what load I put on it.
+            <Tool title="16” MacBook Pro, M1 Pro, 16GB RAM (2021)">
+              M1 is the best thing Apple did. I haven’t heard the fans blow in
+              2+ years.
             </Tool>
-            <Tool title="Dell XPS 8950">
-              12th Generation i7 with oodles of memory and 4TB of NVMe drives
-              running Bluefin Linux.
+            <Tool title="Dell U3417W QHD Ultra-Wide Monitor">
+              Is your workstation even serious if your not getting a neck
+              workout?
             </Tool>
-            <Tool title="Moonlander Keyboard">
-              I had terrible RSI problems until I switched to the Moonlander and
-              the Apple Magic Trackpad.
+            <Tool title="Apple Magic Trackpad">My wrist always rests.</Tool>
+            <Tool title="Apple Magic Keyboard">
+              I don’t buy into the mechanical hype.
             </Tool>
-            <Tool title="Apple Magic Trackpad">
-              It even works on Linux. Who knew?
+            <Tool title="Aukey HD Webcam">
+              Have to show-off my skincare routine.
             </Tool>
+          </ToolsSection>
+        </div>
+
+        <div className="mt-8 space-y-20">
+          <ToolsSection title="Gadgets">
+            <Tool title="PlayStation 5">
+              I’m a sucker for story-driven games.
+            </Tool>
+            <Tool title="Apple Watch SE">
+              I will definitely forget to stand up if I take this off.
+            </Tool>
+            <Tool title="Apple AirPods Pro">Barely Noise Canceling</Tool>
+            <Tool title="Contigo Water Bottle">Stay hyderated, kids.</Tool>
+            <Tool title="Apple iPad">Strictly for Cocomelon</Tool>
           </ToolsSection>
         </div>
       </SimpleLayout>

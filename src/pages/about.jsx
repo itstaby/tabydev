@@ -45,19 +45,19 @@ export default function About() {
       <NextSeo
         title="About - Tayyab Anwar"
         description={siteMeta.description}
-        canonical="https://itstaby.dev/about"
+        canonical="https://taby.dev/about"
         openGraph={{
-          url: 'https://itstaby.dev/about',
+          url: 'https://taby.dev/about',
           images: [
             {
-              url: `https://og.itstaby.dev/api/og?title=About&desc=${siteMeta.description}`,
+              url: `https://og.taby.dev/api/og?title=About&desc=${siteMeta.description}`,
               width: 1200,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
           ],
-          siteName: 'itstaby.dev',
+          siteName: 'taby.dev',
         }}
       />
       <Container className="mt-16 sm:mt-32">
@@ -79,8 +79,7 @@ export default function About() {
             </h1>
             <div className="prose mt-6 space-y-7 text-lg text-zinc-600 dark:prose-invert dark:text-zinc-400">
               <p>
-                I picked up my first C++ book in 2007, and it was the most
-                exciting thing in the world.
+                I picked up my first C++ book in 2007, and never looked back.
               </p>
               <p>
                 I’ve been building software since I was a kid, and I’ve focused
@@ -97,10 +96,10 @@ export default function About() {
                 experiences in the projects I’ve done.
               </p>
               <p>
-                I have also worked on diverse set of problems, from SaaS apps
+                I have also worked on a diverse set of problems, from SaaS apps
                 and data pipelines to Machine Learning models and 3D modeling.
-                The diversity of my skill is at the vore of my engineering
-                journey
+                The diversity of my skill is at the core of my engineering
+                journey.
               </p>
             </div>
           </div>

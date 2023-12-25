@@ -26,19 +26,19 @@ export default function Projects() {
       <NextSeo
         title="Projects - Tayyab Anwar"
         description={siteMeta.description}
-        canonical="https://itstaby.dev/projects"
+        canonical="https://taby.dev/projects"
         openGraph={{
-          url: 'https://itstaby.dev/projects',
+          url: 'https://taby.dev/projects',
           images: [
             {
-              url: `https://og.itstaby.dev/api/og?title=Projects&desc=${headline}`,
+              url: `https://og.taby.dev/api/og?title=Projects&desc=${headline}`,
               width: 1200,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
           ],
-          siteName: 'itstaby.dev',
+          siteName: 'taby.dev',
         }}
       />
       <SimpleLayout title={headline} intro={intro}>

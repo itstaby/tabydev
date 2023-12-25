@@ -34,19 +34,19 @@ export function ArticleLayout({
       <NextSeo
         title={meta.title}
         description={meta.description}
-        canonical={`https://itstaby.dev${router.pathname}`}
+        canonical={`https://taby.dev${router.pathname}`}
         openGraph={{
-          url: `https://itstaby.dev${router.pathname}`,
+          url: `https://taby.dev${router.pathname}`,
           images: [
             {
-              url: `https://og.itstaby.dev/api/og?title=${meta.title}&desc=${meta.description}`,
+              url: `https://og.taby.dev/api/og?title=${meta.title}&desc=${meta.description}`,
               width: 1200,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
           ],
-          siteName: 'itstaby.dev',
+          siteName: 'taby.dev',
         }}
       />
       <Container className="mt-16 lg:mt-32">

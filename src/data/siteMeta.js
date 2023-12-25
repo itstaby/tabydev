@@ -15,7 +15,7 @@ const siteMeta = {
     github: 'https://github.com/itstaby',
     linkedin: 'https://linkedin.com/in/tayyab-anwar',
   },
-  siteUrl: 'https://itstaby.dev',
+  siteUrl: 'https://taby.dev',
 }
 export const resume = [
   {
