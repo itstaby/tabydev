@@ -14,8 +14,8 @@ import {
 import image4 from '@/images/photos/family.jpeg'
 import image2 from '@/images/photos/casual.jpeg'
 import image3 from '@/images/hero.jpeg'
-import image1 from '@/images/photos/japan-solo.jpeg'
-import image5 from '@/images/photos/japan.jpeg'
+import image5 from '@/images/photos/storm-king.jpeg'
+import image1 from '@/images/photos/japan.jpeg'
 
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'

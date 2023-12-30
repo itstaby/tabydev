@@ -55,7 +55,7 @@ export const projects = [
   {
     name: 'Polly Q&A',
     description: 'Fluid team engagement giving everyone a voice.',
-    link: { href: 'https://www.polly.ai/qa', label: 'polly.ai/qa' },
+    link: { href: 'https://www.polly.ai/demo-qa', label: 'polly.ai/qa' },
     logo: logoPolly,
   },
   {
