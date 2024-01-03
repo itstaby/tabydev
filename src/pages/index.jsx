@@ -190,7 +190,7 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl text-lg">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Engineer, Traveler, Actor<br></br> Dad in training
+            Engineer, Traveler, Actor,<br></br> Dad in training
           </h1>
           <p className="prose mt-6 dark:prose-invert">
             I’m Tayyab, and I lead engineering teams and I love being on the
