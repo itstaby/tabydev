@@ -46,8 +46,8 @@ export const resume = [
     company: 'Bentley Systems, Inc.',
     title: 'Software Engineer I',
     logo: logoBentley,
-    start: '2017',
-    end: '2015',
+    start: '2015',
+    end: '2017',
   },
 ]
 
