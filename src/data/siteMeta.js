@@ -2,7 +2,7 @@ import logoEducative from '@/images/logos/educative.png'
 import logoPolly from '@/images/logos/polly.png'
 import logoIntech from '@/images/logos/intech.webp'
 import logoBentley from '@/images/logos/bentley-logo.jpeg'
-import logTanium from '@/images/logos/tanium-logo.png'
+import logoTanium from '@/images/logos/tanium-logo.png'
 
 const siteMeta = {
   title: 'Tayyab Anwar',
@@ -22,7 +22,7 @@ export const resume = [
   {
     company: 'Tanium',
     title: 'Senior Software Engineer',
-    logo: logoPolly,
+    logo: logoTanium,
     start: '2024',
     end: {
       label: 'Present',
