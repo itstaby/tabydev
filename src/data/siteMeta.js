@@ -7,7 +7,7 @@ import logoTanium from '@/images/logos/tanium-logo.png'
 const siteMeta = {
   title: 'Tayyab Anwar',
   description:
-    'Tayyab Anwar is a lead engineer with a history of delivering deiverse software.',
+    'Tayyab Anwar is a lead engineer with a history of delivering diverse software.',
   copyright: 'Tayyab Anwar, CC-BY-SA',
   author: {
     name: 'Tayyab Anwar',
